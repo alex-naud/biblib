@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='biblib',
@@ -19,5 +19,6 @@ setup(
         'Topic :: Database',
         'Topic :: Text Processing',
     ],
-    long_description=open('README.md').read(),
+    setup_requires=['setuptools'],
+    long_description=open('README.md').read()
 )
